@@ -1,9 +1,138 @@
-html {
-  box-sizing: border-box;
+@import 'vars';
+@import 'global';
+
+
+// start header
+.header__top {
+  background-color: $bg;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
 }
+
+.header__logo {
+  margin-left: 7px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .btn {
+    display: inline-block;
+    background-color: $blue;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 4px 19px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 28px;
+    a {color: #ffffff;
+    }
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    &__avatar {
+      display: inline-block;
+      margin-right: 22px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__name {
+      font-weight: 500;
+      color: #333333;
+      font-size: 16px;
+    }
+    &__price {
+      color: $blue;
+      font-size: 15px;
+    }
+  }
+}
+
+.header__bottom {
+  background-color: #ffffff; 
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.menu__list {
+  text-transform: uppercase;
+  font-weight: 500;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 30px;
+    }
+  } 
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #333333;
+  }
+}
+
+.header__search {
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+}
+
+.header__search-input {
+    display: block;
+    border: 1px solid #d9dfe5;
+    border-radius: 24px;
+    width: 100%;
+    height: 44px;
+    padding-left: 25px;
+    padding-right: 70px;    
+    font-size: 15px;
+    &::placeholder {
+      color: #898f96;
+    }
+}
+
+.header__search-btn {
+    position: absolute;
+    border: none;
+    border-radius: 24px;
+    padding: 22px 30px;
+    background-color: $blue;
+    background-image: url(../images/header/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+}
+
+
+// end header
+// start products
+
+
+
+
+
+
