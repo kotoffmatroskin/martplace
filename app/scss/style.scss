@@ -196,17 +196,22 @@
     a {
       color: $text;
     }
-    &__categories::after {
-      content: '';
-      max-width: 13px;
-      width: 100%;
-      min-height: 8px;
-      background-image: url(../images/search-product/chevron-down.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
   }
+
+  &__categories::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    max-width: 13px;
+    width: 100%;
+    min-height: 8px;
+    background-image: url(../images/search-product/chevron-down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
   &__btn {
     display: inline-block;
     position: absolute;
@@ -274,6 +279,11 @@
     padding: 40px 35px;
     text-align: center;
   }
+  &__item--active,
+  &__item:hover {
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
   &__item-image {
     width: 112px;
     height: 113px;
@@ -305,14 +315,173 @@
 }
 
 
-
-
-
-
-
-
-
-
 // end description
+// star weekly-products
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.weekly-products {
+  background-color: #eff1f5;
+  padding-top: 120px;
+  &__title {
+    min-height: 112px;
+    margin-bottom: 50px;
+    padding: 39px 30px 39px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    font-size: 30px;
+   color: #000000;
+  }
+  &__inner {
+    position: relative;
+    min-height: 850px;
+  }
+  &__tags {
+    padding-bottom: 40px;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #ececec;
+    .tag__item {
+      margin-right: 7px;
+      padding: 7px 14px 7px 17px;
+      background-color: #f1f3f6;
+      border-radius: 24px;
+      font-size: 15px;
+      color: #868c96;
+    }
+  }  
+}
+
+.product {
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 450px;
+  }
+
+  &__slider {
+    max-width: 555px;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+  }
+
+  &__content {
+    max-width: 585px;
+    width: 100%;
+    padding: 50px 50px 20px;
+    background-color: #ffffff;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  &__author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 27px;
+  }
+
+  &__author-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #000000;
+    span {
+      margin-left: 10px;
+    }  
+  }
+
+  &__author-link:hover {
+    color: $blue;
+  } 
+
+  &__type {
+    position: relative;
+    margin-left: 47px;
+    font-size: 15px;
+    color: #7347c1;
+  }
+
+  &__type::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -24px;
+    background-image: url(../images/products/wordpress.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;     
+  }
+
+  &__text {
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+  }
+
+  &__price {
+    padding: 9px 18px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: $blue;
+  }
+}
+
+.slick-arrow {
+  width: 55px;
+  height: 45px;
+  border-radius: 24px;
+  position: absolute;
+  border: none;
+  background-color: #7347c1;
+  
+}
+
+.slick-prev {
+  padding-right: 30px;
+  top: -130px;
+  right: 50px;
+}
+
+.slick-next {
+  padding-left: 30px;
+  top: -130px;
+  right: 30px;
+}
+
+.slick-prev img:hover,
+.slick-next img:hover {
+  transform: scale(1.5);
+}
 
 
+
+// end weekly-products
+
+
+// Общие псевдоклассы
+.btn-hover:hover {
+  background-color: $hover-btn;
+  color: $blue;
+}
+
+.slick-arrow:focus,
+.outline-none {
+  outline: none;
+}

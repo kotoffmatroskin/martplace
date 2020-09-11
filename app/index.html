@@ -46,27 +46,27 @@
           <div class="header__menu">
             <nav class="menu">
               <ul class="menu__list">
-                <li>
+                <li class="btn-hover">
                   <a href="#">
                     Home
                   </a>
                 </li>
-                <li>
+                <li class="btn-hover">
                   <a href="#">
                     All products
                   </a>
                 </li>
-                <li>
+                <li class="btn-hover">
                   <a href="#">
                     Wordpress
                   </a>
                 </li>
-                <li>
+                <li class="btn-hover">
                   <a href="#">
                     Festures
                   </a>
                 </li>
-                <li>
+                <li class="btn-hover">
                   <a href="#">
                     Pages
                   </a>
@@ -76,9 +76,10 @@
             <div class="header__search">
               <form>
                 <label class="header__search-lb">
-                  <input class="header__search-input" type="text" placeholder="Search product here..." required>
+                  <input class="header__search-input outline-none" type="text" placeholder="Search product here..."
+                    required>
                 </label>
-                <button class="header__search-btn" type="submit"></button>
+                <button class="header__search-btn outline-none" type="submit"></button>
               </form>
             </div>
           </div>
@@ -108,14 +109,15 @@
               <div class="search-product__item item--opacity-1">
                 <form class="search-product__form">
                   <label class="search-product__label">
-                    <input class="search-product__input" type="text" placeholder="Search your products..." required>
+                    <input class="search-product__input outline-none" type="text" placeholder="Search your products..."
+                      required>
                   </label>
                   <ul class="search-product__categories">
                     <li>
                       <a href="#">All Categories</a>
                     </li>
                   </ul>
-                  <button class="search-product__btn" type="submit">Search Now</button>
+                  <button class="search-product__btn btn-hover outline-none" type="submit">Search Now</button>
                 </form>
               </div>
               <div class="search-product__item item--opacity-2"></div>
@@ -139,7 +141,7 @@
                 congue is laoreet elit metus.
               </div>
             </div>
-            <div class="description__item">
+            <div class="description__item description__item--active">
               <div class="description__item-image description__image--2"></div>
               <div class="description__item-title">
                 Fully Responsive
@@ -166,7 +168,157 @@
         </div>
       </section>
 
+      <section class="weekly-products">
+        <div class="container">
 
+          <div class="weekly-products__title">
+            Weekly Featured Products
+          </div>
+          <div class="weekly-products__inner">
+            <!-- Без дополнительное обертки slider__box,  когда подключаю js он рвет сладер на куски -->
+            <div class="slider__box">
+              <div class="product__item">
+                <div class="product__slider" style="background-image: url(images/products/work-1.jpg);">
+                </div>
+                <div class="product__content">
+                  <div class="product__subtitle">
+                    One Page Resume Template
+                  </div>
+                  <div class="product__author">
+                    <a class="product__author-link" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-1.png);">
+                      </div>
+                      <span>AazzTech</span>
+                    </a>
+                    <div class="product__type">WordPress</div>
+                  </div>
+                  <div class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="weekly-products__tags">
+                    <a class="tag__item btn-hover" href="#">website</a>
+                    <a class="tag__item btn-hover" href="#">plugin</a>
+                    <a class="tag__item btn-hover" href="#">landing page</a>
+                  </div>
+
+                  <div class="product__info">
+                    <a class="product__price btn-hover" href="#">$10 - $50</a>
+                    <a class="product__like" href="#"></a>
+                    <a class="product__buy" href="#"></a>
+                    <div class="product__star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__box">
+              <div class="product__item">
+                <div class="product__slider" style="background-image: url(images/products/work-2.jpg);">
+                </div>
+                <div class="product__content">
+                  <div class="product__subtitle">
+                    One Page Resume Template
+                  </div>
+                  <div class="product__author">
+                    <a class="product__author-link" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-2.png);">
+                      </div>
+                      <span>EchoTheme</span>
+                    </a>
+                    <div class="product__type">WordPress</div>
+                  </div>
+                  <div class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="weekly-products__tags">
+                    <a class="tag__item btn-hover" href="#">website</a>
+                    <a class="tag__item btn-hover" href="#">plugin</a>
+                    <a class="tag__item btn-hover" href="#">landing page</a>
+                  </div>
+
+                  <div class="product__info">
+                    <a class="product__price btn-hover" href="#">$10 - $50</a>
+                    <a class="product__like" href="#"></a>
+                    <a class="product__buy" href="#"></a>
+                    <div class="product__star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__box">
+              <div class="product__item">
+                <div class="product__slider" style="background-image: url(images/products/work-3.jpg);">
+                </div>
+                <div class="product__content">
+                  <div class="product__subtitle">
+                    One Page Resume Template
+                  </div>
+                  <div class="product__author">
+                    <a class="product__author-link" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-3.png);">
+                      </div>
+                      <span>Coder-Lab</span>
+                    </a>
+                    <div class="product__type">WordPress</div>
+                  </div>
+                  <div class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="weekly-products__tags">
+                    <a class="tag__item btn-hover" href="#">website</a>
+                    <a class="tag__item btn-hover" href="#">plugin</a>
+                    <a class="tag__item btn-hover" href="#">landing page</a>
+                  </div>
+
+                  <div class="product__info">
+                    <a class="product__price btn-hover" href="#">$10 - $50</a>
+                    <a class="product__like" href="#"></a>
+                    <a class="product__buy" href="#"></a>
+                    <div class="product__star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="products">
+        <div class="container">
+          <div class="products__top">
+            <div class="products__title"></div>
+            <div class="products__filter"></div>
+          </div>
+          <div class="products__inner">
+            <div class="products__inner-btn">
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="products__inner-box">
+              <div class="products__item">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
     </main>
 
@@ -176,7 +328,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>
