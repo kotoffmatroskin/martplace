@@ -22,19 +22,19 @@
               </a>
             </div>
             <div class="header__box">
-              <div class="btn">
-                <a href="#">Become a Seller</a>
+              <!-- <div class="header__btn btn-hover"> -->
+              <a class="header__btn btn-hover" href="#">Become a Seller</a>
+              <!-- </div> -->
+              <div class="header__info">
+                <a class="header__bell" href="#"></a>
+                <a class="header__envelope" href="#"></a>
+                <a class="header__basket" href="#"></a>
               </div>
-              <div class="info">
-                <a class="bell" href="#"></a>
-                <a class="envelope" href="#"></a>
-                <a class="basket" href="#"></a>
-              </div>
-              <div class="user">
-                <div class="user__avatar" style="background-image: url(images/header/user.png);"></div>
-                <div class="user__text">
-                  <a class="user__name" href="#">Taofiq Hakim</a>
-                  <div class="user__price">$20.45</div>
+              <div class="header__user">
+                <div class="avatar avatar--header" style="background-image: url(images/header/user.png);"></div>
+                <div class="header__user-text">
+                  <a class="header__user-name link-hover" href="#">Taofiq Hakim</a>
+                  <div class="header__user-price">$20.45</div>
                 </div>
               </div>
             </div>
@@ -301,17 +301,18 @@
           </div>
           <div class="release-products__inner">
             <div class="release-products__inner-btn block-title-products">
-              <button class="sort-btn sort-btn--active" type="button">Plugins</button>
-              <button class="sort-btn" type="button">WordPress</button>
-              <button class="sort-btn" type="button">Site Template</button>
-              <button class="sort-btn" type="button">PSD Template</button>
-              <button class="sort-btn" type="button">Joomla</button>
-              <button class="sort-btn" type="button">User Interface</button>
-              <button class="sort-btn" type="button">Landing Page</button>
-              <button class="sort-btn" type="button">Software</button>
+              <button class="sort-btn sort-btn--active" type="button" data-filter=".category-plugin">Plugins</button>
+              <button class="sort-btn" type="button" data-filter=".category-wordpress">WordPress</button>
+              <button class="sort-btn" type="button" data-filter=".category-html">Site Template</button>
+              <button class="sort-btn" type="button" data-filter=".category-psd">PSD Template</button>
+              <button class="sort-btn" type="button" data-filter=".category-joomla">Joomla</button>
+              <button class="sort-btn" type="button" data-filter=".category-user">User Interface</button>
+              <button class="sort-btn" type="button" data-filter=".category-landing">Landing Page</button>
+              <button class="sort-btn" type="button" data-filter=".category-software">Software</button>
             </div>
             <div class="products__inner-box">
-              <div class="product__item product__item--release-size">
+              <div class="product__item mix category-wordpress category-new product__item--release-size "
+                data-order="1">
                 <div class="product__img product__img--release-size"
                   style="background-image: url(images/products/work-1.jpg);">
                 </div>
@@ -337,12 +338,149 @@
                   <a class="product__like" href="#"></a>
                   <a class="product__buy" href="#"></a>
                 </div>
-
               </div>
+              <div class="product__item mix category-psd product__item--release-size" data-order="2">
+                <div class="product__img product__img--release-size"
+                  style="background-image: url(images/products/work-2.jpg);">
+                </div>
+                <div class="product__content product__content--release-size">
+                  <a class="product__subtitle link-hover" href="#">
+                    Marketify Coffee Shop
+                  </a>
+                  <div class="product__author">
+                    <a class="product__author-link link-hover" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-2.png);">
+                      </div>
+                      <span>EchoTheme</span>
+                    </a>
+                    <a class="product__type product__type--psd link-hover" href="#">PSD</a>
+                  </div>
+                  <div class="product__text product__text--release-size">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                </div>
+                <div class="product__info product__info--release-size">
+                  <a class="product__price product__price--release-size btn-hover" href="#">$18</a>
+                  <a class="product__like" href="#"></a>
+                  <a class="product__buy" href="#"></a>
+                </div>
+              </div>
+              <div class="product__item mix category-html category-new product__item--release-size" data-order="3">
+                <div class="product__img product__img--release-size"
+                  style="background-image: url(images/products/work-3.jpg);">
+                </div>
+                <div class="product__content product__content--release-size">
+                  <a class="product__subtitle link-hover" href="#">
+                    Bryson - Portfolio Template
+                  </a>
+                  <div class="product__author">
+                    <a class="product__author-link link-hover" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-3.png);">
+                      </div>
+                      <span>Artcorner</span>
+                    </a>
+                    <a class="product__type product__type--html link-hover" href="#">HTML</a>
+                  </div>
+                  <div class="product__text product__text--release-size">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                </div>
+                <div class="product__info product__info--release-size">
+                  <a class="product__price product__price--release-size btn-hover" href="#">$10</a>
+                  <a class="product__like" href="#"></a>
+                  <a class="product__buy" href="#"></a>
+                </div>
+              </div>
+              <div class="product__item mix category-wordpress category-new product__item--release-size" data-order="4">
+                <div class="product__img product__img--release-size"
+                  style="background-image: url(images/products/work-1.jpg);">
+                </div>
+                <div class="product__content product__content--release-size">
+                  <a class="product__subtitle link-hover" href="#">
+                    E-commerce Shopping Cart
+                  </a>
+                  <div class="product__author">
+                    <a class="product__author-link link-hover" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-1.png);">
+                      </div>
+                      <span>Design-Hub</span>
+                    </a>
+                    <a class="product__type product__type--wordpress link-hover" href="#">Plugin</a>
+                  </div>
+                  <div class="product__text product__text--release-size">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                </div>
+                <div class="product__info product__info--release-size">
+                  <a class="product__price product__price--release-size btn-hover" href="#">$10 - $50</a>
+                  <a class="product__like" href="#"></a>
+                  <a class="product__buy" href="#"></a>
+                </div>
+              </div>
+              <div class="product__item mix category-psd product__item--release-size" data-order="5">
+                <div class="product__img product__img--release-size"
+                  style="background-image: url(images/products/work-2.jpg);">
+                </div>
+                <div class="product__content product__content--release-size">
+                  <a class="product__subtitle link-hover" href="#">
+                    Marketify Coffee Shop
+                  </a>
+                  <div class="product__author">
+                    <a class="product__author-link link-hover" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-2.png);">
+                      </div>
+                      <span>AazzTech</span>
+                    </a>
+                    <a class="product__type product__type--psd link-hover" href="#">PSD</a>
+                  </div>
+                  <div class="product__text product__text--release-size">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                </div>
+                <div class="product__info product__info--release-size">
+                  <a class="product__price product__price--release-size btn-hover" href="#">$10 - $50</a>
+                  <a class="product__like" href="#"></a>
+                  <a class="product__buy" href="#"></a>
+                </div>
+              </div>
+              <div class="product__item mix category-html product__item--release-size" data-order="6">
+                <div class="product__img product__img--release-size"
+                  style="background-image: url(images/products/work-3.jpg);">
+                </div>
+                <div class="product__content product__content--release-size">
+                  <a class="product__subtitle link-hover" href="#">
+                    Bryson - Portfolio Template
+                  </a>
+                  <div class="product__author">
+                    <a class="product__author-link link-hover" href="">
+                      <div class="avatar" style="background-image: url(images/products/author-3.png);">
+                      </div>
+                      <span>Coder-Lab</span>
+                    </a>
+                    <a class="product__type product__type--html link-hover" href="#">HTML</a>
+                  </div>
+                  <div class="product__text product__text--release-size">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                </div>
+                <div class="product__info product__info--release-size">
+                  <a class="product__price product__price--release-size btn-hover" href="#">$10</a>
+                  <a class="product__like" href="#"></a>
+                  <a class="product__buy" href="#"></a>
+                </div>
+              </div>
+
             </div>
           </div>
-          <button class="search-product__all products__bottom-btn btn-hover outline-none" type="button">All New
-            Products</button>
+          <div class="products__bottom-btn">
+            <button class="search-product__all btn-hover outline-none" type="button" data-filter=".category-new">All New
+              Products</button>
+          </div>
         </div>
       </section>
 

@@ -32,17 +32,11 @@ body {
   padding: 0px 15px;
 }
 
-.btn-hover:hover {
-  cursor: pointer;
-  background-color: $hover;
-  color: $blue;
-}
-
-.link-hover:hover {
-  color: $blue;
-}
-
-.slick-arrow:focus,
-.outline-none {
-  outline: none;
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
 }
