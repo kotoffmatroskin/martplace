@@ -31,3 +31,18 @@ body {
   margin: 0 auto;
   padding: 0px 15px;
 }
+
+.btn-hover:hover {
+  cursor: pointer;
+  background-color: $hover;
+  color: $blue;
+}
+
+.link-hover:hover {
+  color: $blue;
+}
+
+.slick-arrow:focus,
+.outline-none {
+  outline: none;
+}
