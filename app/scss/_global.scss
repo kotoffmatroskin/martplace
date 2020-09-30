@@ -41,6 +41,56 @@ body {
   background-repeat: no-repeat; 
 }
 
+.ico-menu {
+  position: absolute;
+  top: 95px;
+  width: 370px;
+  height: 0;
+  overflow: hidden;
+  border-top: 0px solid $primary;
+  background-color: $white;
+  box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  z-index: 1;
+}
+
+.ico-box {
+  position: relative;
+  &:hover {
+    .ico-menu {
+      border-width: 1px;
+      height: auto;
+      overflow: auto;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 85px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 16px 16px 16px;
+      border-color: transparent transparent $primary transparent;
+      z-index: 1;
+    }        
+  }    
+}
+
+.ico-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 15px 25px;
+  border-bottom: 1px solid #e8ebf0;
+  font-size: 15px;
+
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
 .dropdown-menu {
   position: absolute;
   top: 80px;

@@ -61,29 +61,226 @@
 
   .notification {
     margin-left: 48px;
+    padding: 35px 0px;
+    
     &__num {
       background-color: $red;
+    }
+    
+    &__menu {
+      left: -20px;
+    }
+    
+    &:hover::before {
+      left: -5px;
+    }
+    
+    &__info {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      color: #747a86;
+    }
+
+    &__name {
+      line-height: 20px;
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        color: $header-text;
+      }
+    }
+
+    &__title {
+      line-height: 22px;
+      color: $primary;
+    }
+
+    &__date {
+      line-height: 28px;
+      font-size: 14px;
+    }
+
+    &__ico {
+      padding: 8px;
+      border-radius: 50%;
+    }
+
+    &__favourite {
+      color: $primary;
+      background-color: #e6f1fd;
+    }
+
+    &__comment {
+      color: #845dc8;
+      background-color: #f1ecf9;
+    }
+
+    &__purchase {
+      color: #ff7375;
+      background-color: #fff0f0;
+    }
+
+    &__review {
+      color: #6bd346;
+      background-color: #effaeb;
+    }
+
+    .ico-item:nth-child(n+2):hover {
+      border: 1px solid $primary;
     }
   }
 
   .message {
     margin-left: 30px;
+    padding: 35px 0px;
+    
     &__num {
       background-color: $green;
-    }  
+    }
+    
+    &__menu {
+      right: -30px;
+    }
+    
+    &:hover::before {
+      left: -5px;
+    }
+
+    &__info {
+      flex: 0 0 270px;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 17px;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 500;
+      color: $header-text;
+    }
+
+    &__new::after {
+      content: "\e818";
+      font-family: 'Linearicons-Free';
+      font-size: 15px;
+      margin-left: 15px;
+      color: $primary;
+    }
+
+    &__date {
+      font-size: 15px;
+      color: #747a86;
+    }
+
+    &__date--color {
+      color: $primary;
+    }
+
+    &__text {
+      font-size: 15px;
+      color: $text
+    }
+    
+    .ico-item:nth-child(n+2):hover {
+      border: 1px solid $primary;
+    }
   }
 
   .basket {
     margin-left: 35px;
+    padding: 35px 0px;
     &__num {
       background-color: $primary;
     }
 
+    &__menu {
+      right: -30px;
+      width: 400px;
+    }
+
+    &:hover::before {
+      left: -5px;
+    }
+
+    &__img {
+      width: 80px;
+      height: 70px;
+      margin-right: 15px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__info {
+      text-align: center;
+    }
+
+    &__btn {
+      border: none;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    &__price {
+      background-color: #e6f1fd;
+      color: $primary;
+      font-size: 16px;
+    }
+
+    &__total {
+      font-size: 18px;
+      text-align: end;
+      padding: 25px;
+      span {
+        margin-left: 30px;
+      }
+    }
+
+    &__bottom-link {
+      display: flex;
+    }
+
+    &__cart,
+    &__out {
+      flex-basis: 50%;
+      padding-top: 25px;
+      padding-bottom: 23px;
+      text-align: center;
+      font-size: 15px;
+      color: $white;
+    }
+
+    &__cart {
+      background-color: #7347c1;
+    }
+
+    &__out {
+      background-color: $primary;
+    }
+
+    .ico-item:hover {
+      border: 1px solid $primary;
+    }
   }
 
   .user {
     margin-left: 40px;
     flex-basis: 220px;
+    padding: 24px 0px;
     &__link {
       display: flex;
     }
@@ -110,7 +307,16 @@
       color: $primary;
       font-size: 15px;
     } 
-}
+
+    &__menu {
+      top: 95px;
+      right: 0px;
+    }
+
+    &:hover::before {
+      right: 20px;
+    }
+  }
 
   &__bottom {
     background-color: $white;
